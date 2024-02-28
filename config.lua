@@ -33,6 +33,12 @@ lvim.builtin.which_key.mappings["x"] = {
 lvim.builtin.which_key.mappings["g"].d = {
   "<cmd>DiffviewOpen<CR>", "Git Diffview"
 }
+lvim.builtin.which_key.mappings["t"] = {
+  name = "+Terminal",
+  f = { "<cmd>ToggleTerm<cr>", "Floating terminal" },
+  v = { "<cmd>2ToggleTerm size=10 direction=vertical<cr>", "Split vertical" },
+  h = { "<cmd>2ToggleTerm size=10 direction=horizontal<cr>", "Split horizontal" },
+}
 
 -- my plugins
 lvim.plugins = {
